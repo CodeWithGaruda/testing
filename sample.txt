@@ -3,3 +3,4 @@ changes form clones folder
 changes to sample.txt form clone folder
 line 5
 changes from clone folder adding to get merge conflict
+h1 is added new file is added \n aloha
