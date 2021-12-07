@@ -1,1 +1,2 @@
 sample test intial commit
+changes to sample.txt form clone folder
