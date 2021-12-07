@@ -1,5 +1,7 @@
 sample test intial commit
 changes form clones folder
 changes to sample.txt form clone folder
+line 5
 changes from clone folder adding to get merge conflict
 sample liens unser sample .txt
+h1 is added new file is added \n aloha
