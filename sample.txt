@@ -5,3 +5,7 @@ line 5
 changes from clone folder adding to get merge conflict
 sample liens unser sample .txt
 h1 is added new file is added \n aloha
+adding some lines form vi editor
+and i am so happy that iam learnig git
+i love spring and devops
+my name is abhinav and iam very bad boy
