@@ -3,6 +3,9 @@ package lamdaExpressions;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.function.Consumer;
+import java.util.function.Predicate;
+import java.util.function.Supplier;
 
 public class PersonsMain {
     public static void main(String[] args) {
@@ -17,6 +20,7 @@ public class PersonsMain {
         printAll(people);
         // print all names whose first name start with a
         printAllFirstNameStartsWith(people, "su");
+        printAllFirstNameStartsWith(people, (p) -> p.getName().startsWith("sa"), p -> System.out.println(p));
     }
 
     static void printAllFirstNameStartsWith(List<Person> people, String str) {
@@ -26,10 +30,30 @@ public class PersonsMain {
         }
     }
 
+    // static void printAllFirstNameStartsWith(List<Person> people, Condition c) {
+    // for (Person person : people) {
+    // if (c.test(person))
+    // System.out.println(person.getName());
+    // }
+    // }
+
+    static void printAllFirstNameStartsWith(List<Person> people, Predicate<Person> predicate,
+            Consumer<Person> consumer) {
+        for (Person person : people) {
+            if (predicate.test(person))
+                // System.out.println(person.getName());
+                consumer.accept(person);
+        }
+    }
+
     static void printAll(List<Person> people) {
         for (Person person : people) {
             System.out.println(person);
         }
     }
 
+}
+
+interface Condition {
+    boolean test(Person p);
 }
