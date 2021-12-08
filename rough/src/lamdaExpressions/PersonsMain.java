@@ -16,7 +16,7 @@ public class PersonsMain {
         // create a method that prints all elements in list
         printAll(people);
         // print all names whose first name start with a
-        printAllFirstNameStartsWith(people);
+        printAllFirstNameStartsWith(people, "");
     }
 
     static void printAllFirstNameStartsWith(List<Person> people, String str) {
