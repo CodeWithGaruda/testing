@@ -1,6 +1,9 @@
 package lamdaExpressions;
 
+import java.util.function.Consumer;
+
 public class ThisReferenceInLambda {
+    int i = 100;
 
     @Override
     public String toString() {
@@ -22,15 +25,12 @@ public class ThisReferenceInLambda {
 
     void alpha() {
         process(34, (i) -> {
-            System.out.println(this);
+            System.out.println(i);
+            System.out.println(this.i);
         });
     }
 
-    static void process(int i, Sample s) {
-        s.print(i);
+    static void process(int i, Consumer<Integer> consumer) {
+        consumer.accept(i);
     }
-}
-
-interface Sample {
-    void print(int i);
 }
