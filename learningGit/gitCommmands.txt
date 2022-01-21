@@ -15,4 +15,7 @@ git stash =>will add the changes to stash area
 git stash pop => will pop the changes back
 
 git stash clear =>will clear all the changes in stash
+
+git stash show -p =>it will show the top view of stash stack
+
 git remote add origin <url> to add the local repository to gitHub url {initial setup}
