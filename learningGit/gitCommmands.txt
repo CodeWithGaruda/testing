@@ -1,0 +1,17 @@
+git add . 
+#to add all the changes that are inside the folder
+
+git restore --staged <fileName or path> => this will unstage the changes
+
+git log will show u all the log details
+
+git reset <commmit-id> =>it will take u back to that particular commit
+
+stashing:
+if dont want to commit the changes and dont want to loose the changes then git statsh is for u
+
+git stash =>will add the changes to stash area
+
+git stash pop => will pop the changes back
+
+git stash clear =>will clear all the changes in stash
