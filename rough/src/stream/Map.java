@@ -6,16 +6,16 @@ import java.util.stream.Collectors;
 
 public class Map {
     public static void main(String[] args) {
-        // List<String> names = Arrays.asList("sanath", "subhash", "srikanth",
-        // "aparna");
-        // names.stream().map(s -> s.toUpperCase()).forEach(Map::print);
-        // System.out.println();
-        // names.stream().map(i -> i.length()).forEach(Map::print);
-        // System.out.println();
-        // List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
-        // 13, 14, 15, 16);
-        // numbers.stream().map(n -> n * n).forEach(Map::print);
-        // System.out.println();
+        List<String> names = Arrays.asList("sanath", "subhash", "srikanth",
+                "aparna");
+        names.stream().map(s -> s.toUpperCase()).forEach(Map::print);
+        System.out.println();
+        names.stream().map(i -> i.length()).forEach(Map::print);
+        System.out.println();
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
+                13, 14, 15, 16);
+        numbers.stream().map(n -> n * n).forEach(Map::print);
+        System.out.println();
         List<Product> products = Arrays.asList(new Product(1, "sony", 30000),
                 new Product(2, "samsung", 20000),
                 new Product(3, "LG", 40000),
