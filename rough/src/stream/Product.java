@@ -1,14 +1,28 @@
 package stream;
 
-public class Product {
+public class Product implements Comparable<Product> {
+
     int id;
     String name;
     int price;
 
-    Product(int id, String name, int price) {
+    public Product(int id, String name, int price) {
         this.id = id;
         this.name = name;
         this.price = price;
+    }
+
+    @Override
+    public int compareTo(Product o) {
+        if (this.price == o.price) {
+            if (this.name.compareTo(o.name) >= 1)
+                return 1;
+            else
+                return -1;
+        } else if (this.price > o.price)
+            return 1;
+        else
+            return -1;
     }
 
     @Override

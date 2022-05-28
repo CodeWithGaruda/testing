@@ -1,11 +1,30 @@
 import java.util.*;
 
+import stream.Product;
+
 enum Companies {
     SAMSUNG, APPLE, REALME, REDMI, OPPO, VIVO;
 }
 
 public class App {
     public static void main(String[] args) {
+        List<Product> product = Arrays.asList(
+                new Product(1, "apple", 20),
+                new Product(2, "grape", 21),
+                new Product(3, "kiwi", 20),
+                new Product(4, "orange", 24));
+        Collections.sort(product, Collections.reverseOrder());
+        for (Product p : product) {
+            System.out.println(p);
+        }
+        System.out.println("------");
+        Collections.sort(product);
+        for (Product p : product) {
+            System.out.println(p);
+        }
+    }
+
+    public static void work() {
         System.out.println("menu:");
         System.out.println("1.Apple");
         System.out.println("2.Samsung");
