@@ -35,7 +35,7 @@ public class StreamMethods {
         // we cant directly min we need to use get()
         System.out.println(min.get());
 
-        // min()
+        // max()
         Optional<Integer> max = numbers.stream().max((v1, v2) -> {
             return v1.compareTo(v2);
         });
