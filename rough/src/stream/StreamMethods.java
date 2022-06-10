@@ -11,7 +11,7 @@ public class StreamMethods {
         List<String> namesWithNulls = Arrays.asList("sanath", "subhash", "cat", null, "dog", "cat", "srikanth", null,
                 "aparna",
                 "sanath", "subhash");
-        // applying distince on list
+        // applying distinct on list
         List<String> distinctnames = namesWithNulls.stream().distinct().collect(Collectors.toList());
         System.out.println(distinctnames);
         // u can convert the objects toArray()
